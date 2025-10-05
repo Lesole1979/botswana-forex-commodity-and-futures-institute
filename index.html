@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botswana Forex, Commodities & Futures Institute</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #3b82f6;
+        }
+        footer {
+  background-color: #111;
+  color: #ddd;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+.social-links {
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  color: #ddd;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #00bcd4; /* accent color */
+  transform: scale(1.2);
+}
+
+footer p {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-xl font-bold text-gray-800">BFCFI</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link text-gray-700 font-medium">Home</a>
+                        <a href="#about" class="nav-link text-gray-700 font-medium">About</a>
+                        <a href="#programs" class="nav-link text-gray-700 font-medium">Programs</a>
+                        <a href="#services" class="nav-link text-gray-700 font-medium">Services</a>
+                        <a href="#contact" class="nav-link text-gray-700 font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 font-medium">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 font-medium">About</a>
+                <a href="#programs" class="block px-3 py-2 text-gray-700 font-medium">Programs</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 font-medium">Services</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Botswana Forex, Commodities & Futures Institute
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                    Empowering traders and investors with world-class education in financial markets
+                </p>
+                <div class="space-x-4">
+                    <button onclick="scrollToSection('programs')" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                        Explore Programs
+                    </button>
+                    <button onclick="scrollToSection('contact')" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About BFCFI</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Leading financial education institute in Botswana, dedicated to developing skilled professionals in forex, commodities, and futures trading.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Expert Education</h3>
+                    <p class="text-gray-600">Comprehensive curriculum designed by industry professionals with years of trading experience.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Practical Training</h3>
+                    <p class="text-gray-600">Hands-on experience with real market scenarios and live trading simulations.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Community Support</h3>
+                    <p class="text-gray-600">Join a network of traders and continuous mentorship throughout your journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Programs</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Choose from our comprehensive range of courses designed for all skill levels
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover bg-white border border-gray-200 rounded-lg p-6 shadow-lg">
+                    <div class="text-center mb-4">
+                        <div class="bg-blue-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            💱
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Forex Trading</h3>
+                    </div>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li>• Currency pair analysis</li>
+                        <li>• Technical & fundamental analysis</li>
+                        <li>• Risk management strategies</li>
+                        <li>• Live trading sessions</li>
+                    </ul>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-blue-600 mb-4">P2,500</p>
+                        <button class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
+                            Enroll Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-white border border-gray-200 rounded-lg p-6 shadow-lg">
+                    <div class="text-center mb-4">
+                        <div class="bg-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            🌾
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Commodities Trading</h3>
+                    </div>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li>• Agricultural commodities</li>
+                        <li>• Precious metals trading</li>
+                        <li>• Energy markets</li>
+                        <li>• Supply & demand analysis</li>
+                    </ul>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-green-600 mb-4">P3,000</p>
+                        <button class="w-full bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300">
+                            Enroll Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-white border border-gray-200 rounded-lg p-6 shadow-lg">
+                    <div class="text-center mb-4">
+                        <div class="bg-purple-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            📈
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Futures Trading</h3>
+                    </div>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li>• Futures contracts basics</li>
+                        <li>• Hedging strategies</li>
+                        <li>• Margin requirements</li>
+                        <li>• Portfolio management</li>
+                    </ul>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-purple-600 mb-4">P3,500</p>
+                        <button class="w-full bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700 transition duration-300">
+                            Enroll Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Beyond education, we provide comprehensive support for your trading journey
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        🎓
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Certification Programs</h3>
+                    <p class="text-gray-600 text-sm">Industry-recognized certificates upon course completion</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        👥
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Mentorship</h3>
+                    <p class="text-gray-600 text-sm">One-on-one guidance from experienced traders</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        📊
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Market Analysis</h3>
+                    <p class="text-gray-600 text-sm">Daily market insights and trading signals</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        🔧
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Trading Tools</h3>
+                    <p class="text-gray-600 text-sm">Access to professional trading platforms and tools</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Ready to start your trading journey? Contact us today for more information
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                📍
+                            </div>
+                            <div>
+                                <p class="font-medium">Address</p>
+                                <p class="text-gray-600">Plot 123, Central Business District, Gaborone, Botswana</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-green-100 w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                📞
+                            </div>
+                            <div>
+                                <p class="font-medium">Phone</p>
+                                <p class="text-gray-600">+267 73945094</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-purple-100 w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                ✉️
+                            </div>
+                            <div>
+                                <p class="font-medium">Email</p>
+                                <p class="text-gray-600">info@bfcfi.co.bw</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                            <input type="text" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                            <input type="tel" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Program Interest</label>
+                            <select class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option>Select a program</option>
+                                <option>Forex Trading</option>
+                                <option>Commodities Trading</option>
+                                <option>Futures Trading</option>
+                                <option>All Programs</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-4 gap-8 mb-10">
+      <div>
+        <h3 class="text-lg font-semibold mb-3 text-white">BFCFI</h3>
+        <p class="text-sm">
+          Empowering the next generation of traders in Botswana with world-class financial education.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-semibold mb-3 text-white">Programs</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-white">Forex Trading</a></li>
+          <li><a href="#" class="hover:text-white">Commodities</a></li>
+          <li><a href="#" class="hover:text-white">Futures</a></li>
+          <li><a href="#" class="hover:text-white">Certification</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-semibold mb-3 text-white">Services</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-white">Mentorship</a></li>
+          <li><a href="#" class="hover:text-white">Market Analysis</a></li>
+          <li><a href="#" class="hover:text-white">Trading Tools</a></li>
+          <li><a href="#" class="hover:text-white">Support</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-semibold mb-3 text-white">Connect</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Plot 123, CBD, Gaborone</li>
+          <li>+267 73945094</li>
+          <li>info@bfcfi.co.bw</li>
+        </ul>
+
+        <!-- Social Media Icons -->
+        <div class="flex space-x-4 mt-4 text-xl">
+          <a href="https://github.com/Lesole1979" target="_blank" title="GitHub" class="hover:text-white">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://x.com/@MaotoSouljah" target="_blank" title="X (Twitter)" class="hover:text-white">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://facebook.com/profile.php?id=100004452076257" target="_blank" title="Facebook" class="hover:text-white">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://instagram.com/lesolemaoto" target="_blank" title="Instagram" class="hover:text-white">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+      &copy; 2025 Botswana Forex, Commodities & Futures Institute. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- Font Awesome CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" crossorigin="anonymous"></script>
+
+
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling function
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            const navHeight = 64; // Height of fixed navigation
+            const elementPosition = element.offsetTop - navHeight;
+            
+            window.scrollTo({
+                top: elementPosition,
+                behavior: 'smooth'
+            });
+        }
+
+        // Navigation link smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                scrollToSection(targetId);
+                
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Contact form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = this.querySelector('input[type="text"]').value;
+            
+            // Show success message
+            alert(`Thank you ${name}! Your message has been received. We'll get back to you within 24 hours.`);
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Enrollment button functionality
+        document.querySelectorAll('button').forEach(button => {
+            if (button.textContent.includes('Enroll Now')) {
+                button.addEventListener('click', function() {
+                    const programName = this.closest('.card-hover').querySelector('h3').textContent;
+                    alert(`Great choice! You've selected the ${programName} program. Please contact us at +267 123 4567 or info@bfcfi.co.bw to complete your enrollment.`);
+                });
+            }
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', () => {
+            const sections = ['home', 'about', 'programs', 'services', 'contact'];
+            const navHeight = 64;
+            
+            sections.forEach(sectionId => {
+                const section = document.getElementById(sectionId);
+                const sectionTop = section.offsetTop - navHeight - 100;
+                const sectionBottom = sectionTop + section.offsetHeight;
+                const scrollPosition = window.scrollY;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                    // Remove active class from all nav links
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('text-blue-600');
+                        link.classList.add('text-gray-700');
+                    });
+                    
+                    // Add active class to current section nav link
+                    const activeLink = document.querySelector(`a[href="#${sectionId}"]`);
+                    if (activeLink) {
+                        activeLink.classList.remove('text-gray-700');
+                        activeLink.classList.add('text-blue-600');
+                    }
+                }
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'989746bef1a07c4e',t:'MTc1OTYwODE0MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
